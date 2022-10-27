@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:text="Employee Name:-"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:layout_below="@id/txt1"
+        android:id="@+id/title"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2"
+        android:layout_below="@id/title"
+        android:text="Employee Code:-"
+        android:textSize="20dp"/>
+
+    <EditText
+
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:layout_below="@id/txt2"
+        android:inputType="textPersonName"
+        android:hint="Code" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/update_note"
+        android:text="Update data"/>
+
+    <Button
+        android:id="@+id/delete_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_note"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="delete data" />
+
+</RelativeLayout>
